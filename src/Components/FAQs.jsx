@@ -11,7 +11,7 @@ const FAQs = () => {
             backgroundColor: "rgb(0,26,68)",
         }} id="faqs" className="bg-black overflow-hidden w-screen mx-auto min-h-[100vh] bg-blend-multiply text-white lg:container lg:py-16 md:py-12 md:px-6 py-12">
 
-            {/* <h1 className="text-center lg:text-4xl text-2xl lg:leading-9 leading-7 font-semibold"></h1> */}
+            <h1 className="text-center lg:text-4xl text-2xl lg:leading-9 leading-7 font-semibold mb-9">FAQ's</h1>
             <div style={{
                 backgroundColor: '#292929'
             }} className="lg:w-8/12 w-[70%] p-4 rounded-3xl mx-auto">

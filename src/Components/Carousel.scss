@@ -1,5 +1,42 @@
 .carrousel {
-    &::-webkit-scrollbar {
-        display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.image-active {
+  animation: animateImage 14s;
+}
+
+.image-deactive {
+  animation: removeImage 14s;
+}
+@keyframes animateImage {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes removeImage {
+  100% {
+    transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  @keyframes animateImage {
+    0% {
+      transform: translateX(0);
     }
+    50% {
+      transform: translateX(-2000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }

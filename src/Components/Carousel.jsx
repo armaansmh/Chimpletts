@@ -51,26 +51,40 @@ export default function Carousel() {
     Image7,
   ]);
   return (
-    <div className="flex w-[80%] max-w-[700px] relative overflow-x-hidden gap-4">
-      <div className="carousel-item h-[100%] w-[100%] max-w-[400px] max-h-[400px]">
-        <img src={images[currentIndex]} className="current-image" ref={currentImage} className="w-full h-full" alt="" /> 
-      </div>
-      <div className="hidden md:block carousel-item h-[100%] w-[100%] max-w-[400px] max-h-[400px]">
-        <img src={images[currentIndex == 6 ? 0 : currentIndex + 1]} ref={currentImage2} className="current-image2 w-full h-full" alt="" /> 
+    <div className="flex w-[100%] relative overflow-x-hidden gap-4">
+      {
+        images.map((image, index) => {
+          return (
+            <div className="carousel-image h-full" key={index}>
+              <img src={image} className="max-w-[300px]" alt="" />
+            </div>
+          )
+        })
+      }
+      <div style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+      }} onMouseEnter={(e) => {
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        carouselImages.forEach(image => {
+          image.classList.add("image-active");
+          image.addEventListener("animationend", (e) => {
+            image.classList.remove("image-active");
+          })
+        })
+      }}  className="left-arrow absolute top-0 left-0 h-full w-[9vw] flex items-center justify-center">
+
+        <i className="fa-solid fa-arrow-left text-white text-4xl"></i>
       </div>
       <div style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.6)'
-      }} onClick={() => {
-        swipeLeft()
-      }} className="left-arrow absolute h-full flex flex-col items-center justify-center w-[15%] top-0 left-0">
-        <i className="fa-solid fa-arrow-left text-white text-5xl align-middle"></i>
-      </div>
-      <div style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.6)'
-      }} onClick={() => {
-        swipeRight()
-      }} className="right-arrow absolute h-full flex flex-col items-center justify-center w-[15%] top-0 right-0">
-        <i className="fa-solid fa-arrow-right text-white text-5xl align-middle"></i>
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+      }} 
+      onMouseEnter={(e) => {
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        carouselImages.forEach(image => {
+          image.classList.add("image-active");
+        })
+      }}       className="left-arrow absolute top-0 right-0 h-full w-[9vw] flex items-center justify-center">
+        <i className="fa-solid fa-arrow-right text-white text-4xl"></i>
       </div>
     </div>
   );
