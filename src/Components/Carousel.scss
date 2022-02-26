@@ -4,7 +4,7 @@
   }
 }
 .image-active {
-  animation: animateImage infinite 14s ease-in-out;
+  animation: animateImage infinite 10s linear;
 }
 
 @keyframes animateImage {
