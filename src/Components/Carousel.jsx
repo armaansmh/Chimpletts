@@ -83,6 +83,9 @@ export default function Carousel() {
         const carouselImages = document.querySelectorAll(".carousel-image");
         carouselImages.forEach(image => {
           image.classList.add("image-active");
+          image.addEventListener("animationend", (e) => {
+            image.classList.remove("image-active");
+          })
         })
       }}       className="left-arrow absolute top-0 right-0 h-full w-[9vw] flex items-center justify-center">
         <i className="fa-solid fa-arrow-right text-white text-4xl"></i>

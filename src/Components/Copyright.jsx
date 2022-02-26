@@ -7,7 +7,7 @@ export default function Copyright() {
       style={{
         backgroundColor: "#001A44",
       }}
-      className="h-[40vh] border-t border-white w-full text-white text-xl flex flex-col items-center justify-center gap-3"
+      className="h-[20vh] border-t border-white w-full text-white text-xl flex flex-col items-center justify-center gap-3"
     >
       <div className="flex gap-6 items-center  justify-center">
         <a href="https://discord.gg/JdPr6gHbhv" target="_blank">

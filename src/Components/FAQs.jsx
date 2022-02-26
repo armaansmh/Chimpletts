@@ -102,7 +102,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open4 ? "block" : "hidden")}>
-                        <p className="text-base leading-6 text-left text-white font-normal">March 1, 7PM UTC</p>
+                        <p className="text-base leading-6 text-left text-white font-normal">TBA</p>
                     </div>
                 </div>
 
