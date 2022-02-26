@@ -72,7 +72,7 @@ export default function Carousel() {
             image.classList.remove("image-active");
           })
         })
-      }}  className="left-arrow absolute top-0 left-0 h-full w-[9vw] flex items-center justify-center">
+      }}  className="left-arrow absolute top-0 left-0 h-full w-[4vw] flex items-center justify-center">
 
         <i className="fa-solid fa-arrow-left text-white text-4xl"></i>
       </div>
@@ -87,7 +87,7 @@ export default function Carousel() {
             image.classList.remove("image-active");
           })
         })
-      }}       className="left-arrow absolute top-0 right-0 h-full w-[9vw] flex items-center justify-center">
+      }}       className="left-arrow absolute top-0 right-0 h-full w-[4vw] flex items-center justify-center">
         <i className="fa-solid fa-arrow-right text-white text-4xl"></i>
       </div>
     </div>
