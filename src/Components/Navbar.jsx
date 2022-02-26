@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
   return (
     <div className="grid grid-cols-1 place-items-center navbar z-10 lg:flex-row  pt-8 gap-4 items-center justify-center  w-full px-9 py-3">
-      <div className="h-[50vh] w-full flex flex-col items-center justify-center">
+      <div className="h-[50vh] w-full flex flex-col items-center justify-end">
       <img
         src={Logo}
         ref={parallaxText}
@@ -39,13 +39,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-// background: hsla(217, 100%, 7%, 1);
-
-// background: linear-gradient(180deg, hsla(217, 100%, 7%, 1) 0%, hsla(217, 100%, 13%, 1) 100%);
-
-// background: -moz-linear-gradient(180deg, hsla(217, 100%, 7%, 1) 0%, hsla(217, 100%, 13%, 1) 100%);
-
-// background: -webkit-linear-gradient(180deg, hsla(217, 100%, 7%, 1) 0%, hsla(217, 100%, 13%, 1) 100%);
-
-// filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000E25", endColorstr="#001A44", GradientType=1 );
