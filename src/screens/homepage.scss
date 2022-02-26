@@ -1,0 +1,26 @@
+.animatelogo {
+    animation: animateLogo 1s linear;
+}
+.animateopacity {
+    animation: animateOpacity 1s linear;
+}
+
+@keyframes animateLogo {
+    0% {
+        opacity: 0;
+        margin-top: 40px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes animateOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
