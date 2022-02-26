@@ -7,6 +7,7 @@ import Image3 from "../Assets/NFTs/3.png";
 import Image4 from "../Assets/NFTs/4.png";
 import Image5 from "../Assets/NFTs/5.png";
 import Image6 from "../Assets/NFTs/6.png";
+import Banner from "../Assets/banner.png";
 import Image7 from "../Assets/NFTs/7.png";
 import "./Carousel.scss";
 
@@ -51,7 +52,7 @@ export default function Carousel() {
     Image7,
   ]);
   return (
-    <div className="flex w-[100%] relative overflow-x-hidden gap-4">
+    <div className="flex w-[80%] relative overflow-x-hidden gap-4">
       {
         images.map((image, index) => {
           return (

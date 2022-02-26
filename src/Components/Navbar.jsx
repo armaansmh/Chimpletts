@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
   return (
     <div className="grid grid-cols-1 place-items-center navbar z-10 lg:flex-row  pt-8 gap-4 items-center justify-center  w-full px-9 py-3">
-      <div className="h-[100vh] w-full flex flex-col items-center justify-center">
+      <div className="h-[50vh] w-full flex flex-col items-center justify-center">
       <img
         src={Logo}
         ref={parallaxText}
@@ -36,7 +36,6 @@ export default function Navbar() {
         alt=""
       />
       </div>
-      <Carousel />
     </div>
   );
 }

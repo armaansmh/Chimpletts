@@ -21,7 +21,7 @@ const FAQs = () => {
                         <div className=" ">
                             <p className="flex justify-center items-center font-medium text-base leading-6 md:leading-4">
                                 {" "}
-                                <span className="  lg:mr-6 mr-4 lg:text-xl md:text-xl text-sm leading-6 md:leading-5 lg:leading-4 font-semibold">Q1.</span> What is Project Yokai?
+                                <span className="  lg:mr-6 mr-4 lg:text-xl md:text-xl text-sm leading-6 md:leading-5 lg:leading-4 font-semibold">Q1.</span> What is Project Chimpetts
                             </p>
                         </div>
                         <button aria-label="toggler" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setOpen(!open)}>
@@ -31,7 +31,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open ? "block" : "hidden")}>
-                        <p className="text-base text-white leading-6 text-left font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio exercitationem eum nulla, at labore maiores est aut ratione laborum, doloremque sunt veniam dicta deserunt. Distinctio deserunt aliquid nihil excepturi ipsa optio facilis odit beatae.</p>
+                        <p className="text-base text-white leading-6 text-left font-normal">TheChimpetts are a derivative of the BlueChip project "TheChimpions". They can be a cute companion to your Chimpion.</p>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open2 ? "block" : "hidden")}>
-                        <p className="text-base text-left leading-6 text-white font-normal">The total supply will be 2222</p>
+                        <p className="text-base text-left leading-6 text-white font-normal">The total supply will be 444</p>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open3 ? "block" : "hidden")}>
-                        <p className="text-base text-left leading-6 text-white font-normal">1 Sol</p>
+                        <p className="text-base text-left leading-6 text-white font-normal">The mint price will be 1 Sol</p>
                     </div>
                 </div>
 
@@ -92,7 +92,7 @@ const FAQs = () => {
                             <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4   ">
                                 {" "}
                                 <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold   ">Q4.</span>
-                            What is the mint time?
+                            When is the mint?
                             </p>
                         </div>
                         <button aria-label="toggler" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setOpen4(!open4)}>
@@ -102,7 +102,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open4 ? "block" : "hidden")}>
-                        <p className="text-base leading-6 text-left text-white font-normal">From 12AM March Soon.</p>
+                        <p className="text-base leading-6 text-left text-white font-normal">March 1, 7PM UTC</p>
                     </div>
                 </div>
 
@@ -116,6 +116,7 @@ const FAQs = () => {
                                 {" "}
                                 <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold   ">Q5.</span>
                             Which Wallets can be used to mint?
+
                             </p>
                         </div>
                         <button aria-label="toggler" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setOpen5(!open5)}>
