@@ -52,13 +52,13 @@ export default function Carousel() {
     });
   }, []);
   return (
-      
+
     <ul
       style={{
           cursor: 'grab'
       }}
       ref={items}
-      className="carrousel flex drag gap-4 overflow-x-auto w-[100%] max-w-[500px]  h-[100%] snap-x snap-mandatory before:shrink-1 after:shrink-0"
+      className="carrousel flex drag gap-4 overflow-x-auto w-[100%] max-w-[869px]  h-[100%] snap-x snap-mandatory before:shrink-0 before:w-[5vw] after:shrink-0 after:w-[5vw]"
     >
       {images.map((image, index) => {
         return (
