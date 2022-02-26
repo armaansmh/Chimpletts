@@ -4,18 +4,15 @@
   }
 }
 .image-active {
-  animation: animateImage 14s;
+  animation: animateImage infinite 14s;
 }
 
-.image-deactive {
-  animation: removeImage 14s;
-}
 @keyframes animateImage {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-1000px);
+    transform: translateX(-50vw);
   }
   100% {
     transform: translateX(0);
