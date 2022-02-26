@@ -4,26 +4,18 @@
   }
 }
 .image-active {
-  animation: animateImage infinite 14s;
+  animation: animateImage infinite 14s ease-in-out;
 }
 
 @keyframes animateImage {
   0% {
     transform: translateX(0);
   }
-  50% {
-    transform: translateX(-50vw);
-  }
   100% {
-    transform: translateX(0);
+    transform: translateX(-700%);
   }
 }
 
-@keyframes removeImage {
-  100% {
-    transform: translateX(0);
-  }
-}
 @media only screen and (max-width: 600px) {
   @keyframes animateImage {
     0% {

@@ -53,15 +53,55 @@ export default function Carousel() {
   ]);
   return (
     <div className="flex w-[100%] relative overflow-x-hidden gap-4">
+      <div className="flex w-[100vw] mr-[550px]">
+
       {
         images.map((image, index) => {
           return (
-            <div className="image-active carousel-image h-full" key={index}>
+            <div className="carousel-image h-full" key={index}>
               <img src={image} className="max-w-[300px]" alt="" />
             </div>
           )
         })
       }
+      </div>
+      <div className="flex w-[100vw]">
+
+      {
+        images.map((image, index) => {
+          return (
+            <div className="carousel-image h-full" key={index}>
+              <img src={image} className="max-w-[300px]" alt="" />
+            </div>
+          )
+        })
+      }
+      </div>
+      <div style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+      }} onMouseEnter={(e) => {
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        carouselImages.forEach(image => {
+          image.classList.add("image-active");
+        })
+      }}  className="left-arrow absolute top-0 left-0 h-full w-[4vw] flex items-center justify-center">
+
+        <i className="fa-solid fa-arrow-left text-white text-4xl"></i>
+      </div>
+      <div style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+      }} 
+      onMouseEnter={(e) => {
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        carouselImages.forEach(image => {
+          image.classList.add("image-active");
+          image.addEventListener("animationend", (e) => {
+            image.classList.remove("image-active");
+          })
+        })
+      }}       className="left-arrow absolute top-0 right-0 h-full w-[4vw] flex items-center justify-center">
+        <i className="fa-solid fa-arrow-right text-white text-4xl"></i>
+      </div>
     </div>
   );
 }
