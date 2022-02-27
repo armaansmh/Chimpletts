@@ -24,6 +24,7 @@ export default function Carousel() {
     Image3,
     Image4,
     Image5,
+    Image6,
   ]);
   return (
     <div className="marquee relative h-[50vh] w-[100vw] overflow-hidden">
