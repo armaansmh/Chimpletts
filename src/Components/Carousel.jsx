@@ -188,7 +188,7 @@ Render
         {images.map((image, index) => {
           return (
             <div className="menu--item image-active h-full" key={index}>
-              <img src={image} className="max-w-[300px]" alt="" />
+              <img src={image} className="max-w-[300px] w-full" alt="" />
             </div>
           );
         })}
