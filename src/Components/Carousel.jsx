@@ -183,12 +183,13 @@ Render
     Image7,
   ]);
   return (
-    <div className="flex w-[100%] relative overflow-x-hidden gap-4">
-      <div className="flex menu w-[100vw]">
+    <div className="flex w-[100%] relative h-[60vh] overflow-x-hidden">
+      <div className="flex menu w-[100vw] h-full">
         {images.map((image, index) => {
           return (
-            <div className="menu--item image-active h-full" key={index}>
-              <img src={image} className="max-w-[300px] w-full" alt="" />
+            <div className="menu--item flex flex-col relative image-active h-full" key={index}>
+              <div className="overlay absolute top-0 left-0 w-full h-full"></div>
+              <img src={image} className="max-w-[100%] h-full w-full" alt="" />
             </div>
           );
         })}
