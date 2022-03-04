@@ -78,7 +78,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open3 ? "block" : "hidden")}>
-                        <p className="text-base text-left leading-6 text-white font-normal">The mint price will be 1 Sol</p>
+                        <p className="text-base text-left leading-6 text-white font-normal">The mint price will be 0.99 Sol</p>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open4 ? "block" : "hidden")}>
-                        <p className="text-base leading-6 text-left text-white font-normal">TBA</p>
+                        <p className="text-base leading-6 text-left text-white font-normal">5th March 7PM UTC</p>
                     </div>
                 </div>
 
