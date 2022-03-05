@@ -102,7 +102,7 @@ const FAQs = () => {
                         </button>
                     </div>
                     <div id="menu" className={"mt-6 w-full " + (open4 ? "block" : "hidden")}>
-                        <p className="text-base leading-6 text-left text-white font-normal">5th March 7PM UTC on <a href="monkelabs.io" className="font-bold underline">monkelabs.io</a> </p>
+                        <p className="text-base leading-6 text-left text-white font-normal">5th March 7PM UTC on <a href="https://thechimpetts.monkelabs.io/" className="font-bold underline">monkelabs.io</a> </p>
                     </div>
                 </div>
 
