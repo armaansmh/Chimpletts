@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import FAQs from './Components/FAQs';
 import Copyright from './Components/Copyright';
 import Roadmap from './Components/Roadmap';
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Homepage />
       <Roadmap />
+      <AboutUs />
       <div style={{
         backgroundColor: 'rgb(0, 26, 68)'
       }} className="border-t border-white w-screen flex flex-col items-center justify-center min-h-screen">
